@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-3.0" prefHeight="643.0" prefWidth="288.0" style="-fx-background-color: #F2E3E3;">
+         <children>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#322f2f" height="627.0" layoutX="13.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="264.0" />
+            <JFXButton layoutX="24.0" layoutY="103.0" opacity="0.45" prefHeight="55.0" prefWidth="240.0" ripplerFill="WHITE" style="-fx-background-color: #4F4F52;" text="Dashboard" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="24.0" layoutY="172.0" onMouseClicked="#manageEmployeeOnAction" opacity="0.45" prefHeight="55.0" prefWidth="240.0" ripplerFill="WHITE" style="-fx-background-color: #4F4F52;" text="Manage Employee" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="24.0" layoutY="239.0" onMouseClicked="#manageBusONAction" opacity="0.45" prefHeight="55.0" prefWidth="240.0" ripplerFill="WHITE" style="-fx-background-color: #4F4F52;" text="Manage Buses" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="24.0" layoutY="308.0" onMouseClicked="#manageStocksOnAction" opacity="0.45" prefHeight="55.0" prefWidth="240.0" ripplerFill="WHITE" style="-fx-background-color: #4F4F52;" text="Manage Stocks" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="24.0" layoutY="375.0" onMouseClicked="#manageProfitOnAction" opacity="0.45" prefHeight="55.0" prefWidth="240.0" ripplerFill="WHITE" style="-fx-background-color: #4F4F52;" text="Manage Profit" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="24.0" layoutY="442.0" onMouseClicked="#monitorDriverOnAction" opacity="0.45" prefHeight="55.0" prefWidth="240.0" ripplerFill="WHITE" style="-fx-background-color: #4F4F52;" text="Monitor Driver" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="99.0" layoutY="581.0" onMouseClicked="#logoutOnAction" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: #41348E; -fx-background-radius: 12;" text="Log Out" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="28.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/owner.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="79.0" layoutY="38.0" prefHeight="30.0" prefWidth="147.0" text="Owner Name" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+            </Label>
+            <Line endX="124.186767578125" layoutX="140.0" layoutY="86.0" startX="-113.08378601074219" stroke="WHITE" strokeWidth="4.0" />
+            <JFXButton layoutX="24.0" layoutY="511.0" onMouseClicked="#busHealthInfoOnAction" opacity="0.45" prefHeight="55.0" prefWidth="240.0" ripplerFill="WHITE" style="-fx-background-color: #4F4F52;" text="Bus Health Info" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="changePane" layoutX="284.0" layoutY="-1.0" prefHeight="641.0" prefWidth="740.0" style="-fx-background-color: #F2E3E3;" />
+   </children>
+</AnchorPane>
