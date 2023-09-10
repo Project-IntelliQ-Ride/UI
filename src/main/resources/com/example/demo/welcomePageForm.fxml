@@ -11,7 +11,7 @@
    <children>
       <ImageView fitHeight="525.0" fitWidth="858.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../assests/welcomepage.png" />
+            <Image url="@../../../../assests/welcomepage.png" />
          </image>
       </ImageView>
       <JFXButton buttonType="RAISED" layoutX="351.0" layoutY="416.0" onMouseClicked="#GetStartOnAction" prefHeight="43.0" prefWidth="110.0" ripplerFill="WHITE" style="-fx-background-color: #6D56FE; -fx-background-radius: 10;" text="Get Start" textAlignment="CENTER" textFill="WHITE">
