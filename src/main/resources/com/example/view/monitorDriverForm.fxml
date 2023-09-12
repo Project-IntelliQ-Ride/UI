@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="641.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.MonitorDriverFormController">
+   <children>
+      <AnchorPane prefHeight="122.0" prefWidth="740.0" style="-fx-background-color: #F2E3E3;">
+         <children>
+            <Label layoutX="14.0" layoutY="28.0" prefHeight="23.0" prefWidth="128.0" text="Monitor Driver" textFill="#344767">
+               <font>
+                  <Font name="Roboto Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="121.0" prefHeight="521.0" prefWidth="740.0" style="-fx-background-color: #F2E3E3;" />
+      <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assests/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="8.0" prefHeight="22.0" prefWidth="166.0" text="/ Monitor Driver">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -2,11 +2,9 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="loginPanel" prefHeight="528.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.LoginPageFormController">
@@ -33,19 +31,6 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></JFXButton>
-      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#f0edff" height="40.0" layoutX="74.0" layoutY="167.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="251.0">
-         <effect>
-            <Bloom />
-         </effect>
-      </Rectangle>
-      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#f0edff" height="40.0" layoutX="74.0" layoutY="245.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="251.0">
-         <cursor>
-            <Cursor fx:constant="TEXT" />
-         </cursor>
-         <effect>
-            <Bloom />
-         </effect>
-      </Rectangle>
       <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="80.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../assests/user.png" />
@@ -56,5 +41,7 @@
             <Image url="@../../../assests/lock.png" />
          </image>
       </ImageView>
+      <AnchorPane layoutX="72.0" layoutY="167.0" opacity="0.63" prefHeight="40.0" prefWidth="251.0" style="-fx-background-color: white; -fx-background-radius: 8;" />
+      <AnchorPane layoutX="72.0" layoutY="247.0" opacity="0.63" prefHeight="40.0" prefWidth="251.0" style="-fx-background-color: white; -fx-background-radius: 8;" />
    </children>
 </AnchorPane>
