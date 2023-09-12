@@ -12,6 +12,6 @@ public class WelcomePageFormController {
 
     public void GetStartOnAction(MouseEvent mouseEvent) throws IOException {
         panel.getChildren().clear();
-        panel.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("../loginPageForm.fxml")))));
+        panel.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("/com/example/view/loginPageForm.fxml")))));
     }
 }

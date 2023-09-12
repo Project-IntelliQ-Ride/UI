@@ -15,7 +15,7 @@ public class DashboardFormController {
     public AnchorPane changePane;
 
     public void logoutOnAction(MouseEvent mouseEvent) throws IOException {
-        AnchorPane load = FXMLLoader.load(getClass().getResource("/com/example/demo/loginPageForm.fxml"));
+        AnchorPane load = FXMLLoader.load(getClass().getResource("/com/example/view/loginPageForm.fxml"));
         Stage stage = new Stage();
         stage.setScene(new Scene(load));
         Stage stage1 = (Stage) mainPane.getScene().getWindow();
@@ -26,36 +26,36 @@ public class DashboardFormController {
 
     public void manageEmployeeOnAction(MouseEvent mouseEvent) throws IOException {
         changePane.getChildren().clear();
-        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("../manageEmployeeForm.fxml")))));
+        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("/dashboard/manageEmployeeForm.fxml")))));
     }
 
     public void manageBusONAction(MouseEvent mouseEvent) throws IOException {
         changePane.getChildren().clear();
-        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("../manageBusForm.fxml")))));
+        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("/dashboard/manageBusForm.fxml")))));
 
     }
 
     public void manageStocksOnAction(MouseEvent mouseEvent) throws IOException {
         changePane.getChildren().clear();
-        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("../manageStockForm.fxml")))));
+        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("/dashboard/manageStockForm.fxml")))));
 
     }
 
     public void manageProfitOnAction(MouseEvent mouseEvent) throws IOException {
         changePane.getChildren().clear();
-        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("../manageProfitForm.fxml")))));
+        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("/dashboard/manageProfitForm.fxml")))));
 
     }
 
     public void monitorDriverOnAction(MouseEvent mouseEvent) throws IOException {
         changePane.getChildren().clear();
-        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("../monitorDriverForm.fxml")))));
+        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("/dashboard/monitorDriverForm.fxml")))));
 
     }
 
     public void busHealthInfoOnAction(MouseEvent mouseEvent) throws IOException {
         changePane.getChildren().clear();
-        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("../busHealthInfoForm.fxml")))));
+        changePane.getChildren().add(FXMLLoader.load((Objects.requireNonNull(getClass().getResource("/dashboard/busHealthInfoForm.fxml")))));
 
     }
 }
